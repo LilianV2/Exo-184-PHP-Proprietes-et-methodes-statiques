@@ -10,16 +10,17 @@ require "classes/Princesse.php";
 // Creation d'une instance de la classe personnage
 $humain = new Personnage();
 $humain->setNom("Votre nom");
-
+echo "nombre d'instances de la classe personnage : " . Personnage::getNumInstances() . "<br>";
 // Creation d'une instance de la classe dragon
 $dragon = new Dragon();
 $dragon->setNom("");
-
+echo "nombre de dragons : " . Dragon::nbDragon();
 // Creation d'une instance de princesse
 $princesse = new Princesse();
 
 // Creation d'ne instance de sorcier
-$sorcier = new Sorcier();
+// FIXME --- commenter pour tester
+//$sorcier = new Sorcier();
 
 
 
